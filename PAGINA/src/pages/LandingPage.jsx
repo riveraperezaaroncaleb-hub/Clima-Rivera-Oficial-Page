@@ -5,6 +5,7 @@ import Services from '../components/Services'
 import About from '../components/About'
 import Contact from '../components/Contact'
 import Footer from '../components/Footer'
+import ChatBot from '../components/ChatBot'
 
 // LandingPage is the public homepage shown for visitors.
 // It composes the main landing sections and passes the theme state to the navbar.
@@ -21,6 +22,7 @@ const LandingPage = ({ isDarkMode, onToggleTheme }) => {
       </main>
 
       <Footer />
+      <ChatBot />
     </div>
   )
 }

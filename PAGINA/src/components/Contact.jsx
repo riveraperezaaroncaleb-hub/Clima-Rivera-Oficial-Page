@@ -85,7 +85,7 @@ const Contact = () => {
 
               <div className="form-actions">
                 <button className="btn btn-primary" type="submit">
-                  Enviar solicitud
+                  Solicitar cotización
                 </button>
               </div>
             </form>
