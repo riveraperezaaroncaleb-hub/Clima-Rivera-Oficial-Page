@@ -8,8 +8,7 @@ const Contact = () => {
           <span className="eyebrow">Contacto</span>
           <h2>Solicita tu cotización sin compromiso</h2>
           <p>
-            Estamos listos para ayudarte a elegir la mejor solución para tu proyecto,
-            hogar o negocio.
+            Contáctanos por teléfono, WhatsApp o correo para solicitar una cotización.
           </p>
         </header>
 
@@ -48,48 +47,6 @@ const Contact = () => {
               </li>
             </ul>
           </aside>
-
-          <div className="form-card">
-            <h3>Envíanos un mensaje</h3>
-            <form action="mailto:climarivera186@gmail.com" method="post" encType="text/plain">
-              <div className="form-grid">
-                <div className="field">
-                  <label htmlFor="name">Nombre</label>
-                  <input id="name" name="name" type="text" placeholder="Tu nombre" />
-                </div>
-
-                <div className="field">
-                  <label htmlFor="email">Correo</label>
-                  <input id="email" name="email" type="email" placeholder="tu@correo.com" />
-                </div>
-
-                <div className="field">
-                  <label htmlFor="phone">Teléfono</label>
-                  <input id="phone" name="phone" type="tel" placeholder="+506 6239-5138" />
-                </div>
-
-                <div className="field">
-                  <label htmlFor="subject">Asunto</label>
-                  <input id="subject" name="subject" type="text" placeholder="Instalación o mantenimiento" />
-                </div>
-
-                <div className="field full">
-                  <label htmlFor="message">Mensaje</label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    placeholder="Cuéntanos qué necesitas..."
-                  />
-                </div>
-              </div>
-
-              <div className="form-actions">
-                <button className="btn btn-primary" type="submit">
-                  Solicitar cotización sin compromiso
-                </button>
-              </div>
-            </form>
-          </div>
         </div>
       </div>
     </section>

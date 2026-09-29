@@ -923,12 +923,12 @@ textarea {
 
 .contact-layout {
   display: grid;
-  grid-template-columns: 0.8fr 1.2fr;
-  gap: 2rem;
+  grid-template-columns: minmax(0, 1fr);
+  justify-items: center;
 }
 
-.contact-card,
-.form-card {
+.contact-card {
+  width: min(100%, 720px);
   border-radius: 1.6rem;
   background: var(--card);
   border: 1px solid var(--border);
@@ -939,8 +939,7 @@ textarea {
   padding: 2rem;
 }
 
-.contact-card h3,
-.form-card h3 {
+.contact-card h3 {
   margin-top: 0;
   font-size: 1.8rem;
 }
@@ -995,66 +994,6 @@ textarea {
   justify-content: center;
   color: var(--primary-dark);
   font-weight: 700;
-}
-
-.form-card {
-  padding: 2rem;
-}
-
-.form-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1rem;
-}
-
-.field {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  margin-bottom: 1rem;
-}
-
-.field.full {
-  grid-column: 1 / -1;
-}
-
-.field label {
-  color: var(--text);
-  font-size: 0.9rem;
-  font-weight: 600;
-}
-
-.field input,
-.field textarea {
-  width: 100%;
-  border: 1px solid var(--border);
-  border-radius: 0.9rem;
-  padding: 0.9rem 1rem;
-  background: var(--background);
-  color: var(--text);
-  outline: none;
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
-}
-
-.field input:focus,
-.field textarea:focus {
-  border-color: var(--focus-border);
-  box-shadow: 0 0 0 4px var(--focus-ring);
-}
-
-.field input::placeholder,
-.field textarea::placeholder {
-  color: var(--muted);
-  opacity: 1;
-}
-
-.field textarea {
-  min-height: 150px;
-  resize: vertical;
-}
-
-.form-actions {
-  margin-top: 0.5rem;
 }
 
 .footer {
@@ -1244,7 +1183,6 @@ textarea {
 
   .service-grid,
   .air-pricing-grid,
-  .form-grid,
   .metrics {
     grid-template-columns: 1fr;
   }
