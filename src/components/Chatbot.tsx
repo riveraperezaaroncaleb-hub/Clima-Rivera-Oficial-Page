@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
-import { MessageSquare, X, Bot, User, ChevronRight } from 'lucide-react';
+import { MessageSquare, X, Bot, ChevronRight } from 'lucide-react';
 
 type Message = {
   id: string;
