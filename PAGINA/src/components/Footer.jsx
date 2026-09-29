@@ -1,5 +1,5 @@
 import React from 'react'
-import logoLight from '../assets/logo-light.jpg'
+import footerLogo from '../assets/logo-dark.jpg'
 
 const Footer = () => {
   return (
@@ -7,12 +7,14 @@ const Footer = () => {
       <div className="container">
         <div className="footer-grid">
           <div>
-            <div className="footer-brand" aria-label="Logo de ClimaCore">
-              <img src={logoLight} alt="Logo ClimaCore" className="footer-logo" />
-            </div>
+            <img
+              src={footerLogo}
+              alt="Clima Rivera Multiservicios"
+              className="footer-logo"
+            />
             <p className="footer-copy">
-              Soluciones profesionales de climatización para hogares, negocios y
-              espacios comerciales con atención personalizada.
+              Electromecánica, Fontanería y Multiservicios. Cobertura nacional en
+              Costa Rica. Para toda situación somos tu solución.
             </p>
           </div>
 
@@ -46,7 +48,7 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="https://wa.me/50662395138" target="_blank" rel="noreferrer">
+                <a href="https://wa.me/50662395138?text=Hola,%20quisiera%20cotizar%20un%20servicio" target="_blank" rel="noreferrer">
                   <span className="footer-link-icon" aria-hidden="true">
                     <svg viewBox="0 0 24 24"><path d="M20.5 3.5A11.5 11.5 0 0 0 3.8 17.5L2.5 21l3.6-1.1A11.5 11.5 0 1 0 20.5 3.5Zm-6.5 3.4c.3 0 .7.1 1 .3.3.2.8.7.8 1.7 0 1-.8 1.9-1.1 2.1-.2.2-.5.2-.9.2-.2 0-.5 0-.8-.1-.8-.2-1.5-.8-2-1.4-.5-.6-.9-1.4-.9-2.3 0-.3.1-.6.3-.8.2-.2.4-.3.7-.3h.3c.2 0 .5 0 .6.4.2.4.3.6.5 1 .1.2.1.5-.1.7-.1.1-.2.3-.3.4-.1.1-.2.2-.1.5.1.4.7 1.1 1.4 1.7.9.7 1.6 1 1.9 1.2.3.2.5.1.7 0 .3-.2.7-.9 1-.9.2-.1.4-.1.7-.1h.4c.3 0 .5.2.6.3.2.2.3.4.2.7-.1.5-.9 1.1-1.4 1.5-.6.4-1.1.8-1.8.9-.5.1-1 .1-1.6 0-.8-.1-1.5-.5-2.2-1-.8-.6-1.5-1.4-2-2.3-.6-.9-.8-1.8-.7-2.7.1-.7.4-1.3.9-1.7.4-.4.9-.6 1.5-.7h.8Z" /></svg>
                   </span>
@@ -57,7 +59,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="footer-bottom">© 2026 ClimaCore. Todos los derechos reservados.</div>
+        <div className="footer-bottom">© 2026 Clima Rivera Multiservicios. Todos los derechos reservados.</div>
       </div>
     </footer>
   )

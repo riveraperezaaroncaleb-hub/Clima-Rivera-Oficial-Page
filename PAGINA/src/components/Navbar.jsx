@@ -1,29 +1,34 @@
-import React from 'react'
-import logoDark from '../assets/logo-dark.jpg'
+import React, { useState } from 'react'
 import logoLight from '../assets/logo-light.jpg'
+import logoDark from '../assets/logo-dark.jpg'
+
+const quoteUrl =
+  'https://wa.me/50662395138?text=Hola,%20quisiera%20cotizar%20un%20servicio'
 
 const navItems = [
   { label: 'Inicio', href: '#inicio' },
   { label: 'Servicios', href: '#servicios' },
+  { label: 'Aires y precios', href: '#aires' },
   { label: 'Nosotros', href: '#nosotros' },
   { label: 'Contacto', href: '#contacto' },
 ]
 
 const Navbar = ({ isDarkMode, onToggleTheme }) => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+
   return (
     <header className="topbar">
       <nav className="nav container" aria-label="Navegación principal">
-        <a className="brand" href="#inicio" aria-label="Ir al inicio">
+        <a className="brand" href="#inicio" aria-label="Clima Rivera Multiservicios, inicio">
           <img
             src={isDarkMode ? logoDark : logoLight}
-            alt="Logo ClimaCore"
+            alt="Clima Rivera Multiservicios"
             className="brand-logo"
           />
         </a>
-
-        <div className="nav-links">
+        <div id="primary-navigation" className={`nav-links${isMenuOpen ? ' is-open' : ''}`}>
           {navItems.map((item) => (
-            <a key={item.label} href={item.href}>
+            <a key={item.label} href={item.href} onClick={() => setIsMenuOpen(false)}>
               {item.label}
             </a>
           ))}
@@ -50,9 +55,25 @@ const Navbar = ({ isDarkMode, onToggleTheme }) => {
               )}
             </span>
           </button>
-          <a className="btn btn-primary" href="#contacto">
-            Solicitar Cotización
+          <a className="btn btn-primary" href={quoteUrl} target="_blank" rel="noreferrer">
+            Cotización sin compromiso
           </a>
+          <button
+            type="button"
+            className="menu-toggle"
+            aria-label={isMenuOpen ? 'Cerrar menú' : 'Abrir menú'}
+            aria-expanded={isMenuOpen}
+            aria-controls="primary-navigation"
+            onClick={() => setIsMenuOpen((open) => !open)}
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              {isMenuOpen ? (
+                <path d="m6 6 12 12M18 6 6 18" />
+              ) : (
+                <path d="M4 7h16M4 12h16M4 17h16" />
+              )}
+            </svg>
+          </button>
         </div>
       </nav>
     </header>

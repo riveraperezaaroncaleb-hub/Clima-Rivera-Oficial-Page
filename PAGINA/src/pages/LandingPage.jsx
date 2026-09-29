@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from '../components/Navbar'
 import Hero from '../components/Hero'
 import Services from '../components/Services'
+import AirConditionerPrices from '../components/AirConditionerPrices'
 import About from '../components/About'
 import Contact from '../components/Contact'
 import Footer from '../components/Footer'
@@ -17,6 +18,7 @@ const LandingPage = ({ isDarkMode, onToggleTheme }) => {
       <main>
         <Hero />
         <Services />
+        <AirConditionerPrices />
         <About />
         <Contact />
       </main>

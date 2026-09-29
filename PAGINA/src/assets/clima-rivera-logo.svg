@@ -1,0 +1,50 @@
+<svg width="1200" height="700" viewBox="0 0 1200 700" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="shine" x1="120" x2="960" y1="130" y2="620" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8AE3FF"/>
+      <stop offset="0.18" stop-color="#1FA9E7"/>
+      <stop offset="0.5" stop-color="#1F7EE3"/>
+      <stop offset="0.82" stop-color="#0E5AA5"/>
+      <stop offset="1" stop-color="#7DE0FF"/>
+    </linearGradient>
+    <linearGradient id="secondary" x1="220" x2="850" y1="180" y2="580" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F4FCFF"/>
+      <stop offset="0.2" stop-color="#9BE7FF"/>
+      <stop offset="0.7" stop-color="#1FA9E7"/>
+      <stop offset="1" stop-color="#0B4F91"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="700" fill="#000000"/>
+
+  <g>
+    <path d="M337 422C198 423 89 322 89 200C89 80 187 -1 319 1C430 2 524 72 567 160L490 200C470 160 431 120 363 120C276 120 216 181 216 259C216 339 276 399 365 399C433 399 472 364 494 323L571 363C543 438 462 499 341 499C174 499 58 394 58 248C58 102 164 -16 330 -16C495 -16 610 91 635 220L548 229C533 169 486 104 405 72L337 53C220 53 125 138 125 252C125 367 212 447 335 447C432 447 485 415 535 363L337 422Z" fill="url(#shine)" opacity="0.95"/>
+    <path d="M914 179C920 152 935 127 972 105C1013 80 1062 81 1092 89L1092 177C1066 166 1033 165 1004 179C959 201 935 242 918 291L821 291C840 243 854 213 914 179Z" fill="url(#shine)" opacity="0.92"/>
+    <path d="M796 140C820 85 885 44 958 44C1038 44 1106 86 1124 164L1065 176C1049 136 1015 110 967 110C918 110 872 139 857 182L796 140Z" fill="url(#shine)" opacity="0.95"/>
+  </g>
+
+  <g>
+    <g transform="translate(360 125)">
+      <path d="M184 54L211 54L211 113L259 113L259 140L211 140L211 197L184 197L184 140L135 140L135 113L184 113L184 54Z" fill="#EAFBFF"/>
+      <path d="M260 32L278 32L278 82L316 82L316 98L278 98L278 150L260 150L260 98L220 98L220 82L260 82L260 32Z" fill="#EAFBFF"/>
+      <path d="M260 170L278 170L278 220L316 220L316 236L278 236L278 286L260 286L260 236L220 236L220 220L260 220L260 170Z" fill="#EAFBFF"/>
+      <path d="M152 32L170 32L170 82L208 82L208 98L170 98L170 150L152 150L152 98L112 98L112 82L152 82L152 32Z" fill="#EAFBFF"/>
+      <path d="M152 170L170 170L170 220L208 220L208 236L170 236L170 286L152 286L152 236L112 236L112 220L152 220L152 170Z" fill="#EAFBFF"/>
+      <path d="M185 4L203 4L203 55L246 55L246 72L203 72L203 120L185 120L185 72L142 72L142 55L185 55L185 4Z" fill="#EAFBFF"/>
+      <path d="M185 171L203 171L203 223L246 223L246 240L203 240L203 288L185 288L185 240L142 240L142 223L185 223L185 171Z" fill="#EAFBFF"/>
+    </g>
+  </g>
+
+  <g>
+    <text x="470" y="395" font-size="312" font-weight="900" fill="url(#secondary)" font-family="Arial Black, Arial, sans-serif" letter-spacing="-22">CR</text>
+    <text x="170" y="540" font-size="126" font-weight="900" fill="url(#shine)" font-family="Arial Black, Arial, sans-serif" letter-spacing="3">CLIMA RIVERA</text>
+    <text x="365" y="610" font-size="60" font-weight="700" fill="#D8F5FF" font-family="Arial, sans-serif" letter-spacing="16">MULTISERVICIOS</text>
+    <line x1="330" y1="632" x2="865" y2="632" stroke="url(#shine)" stroke-width="7" stroke-linecap="round"/>
+  </g>
+
+  <g opacity="0.95">
+    <path d="M740 217C773 232 803 251 841 269C862 280 876 294 884 312C893 332 892 361 864 369C822 380 764 337 734 299C700 259 679 214 740 217Z" fill="url(#shine)"/>
+    <path d="M622 301C693 246 772 245 864 281C924 306 975 320 1023 319C1036 318 1049 322 1058 333C1071 349 1069 396 1054 407C1033 422 975 434 926 426C888 420 839 393 792 374C760 360 720 342 678 334C648 328 626 324 620 312C616 305 618 304 622 301Z" fill="url(#shine)" opacity="0.9"/>
+    <path d="M154 172C197 194 234 219 278 242C304 256 324 287 332 310C340 334 341 359 326 372C308 388 263 385 231 373C194 359 168 328 127 299C83 268 52 246 42 223C31 197 69 177 154 172Z" fill="url(#shine)" opacity="0.9"/>
+  </g>
+</svg>

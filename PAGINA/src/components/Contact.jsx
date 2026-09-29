@@ -23,7 +23,7 @@ const Contact = () => {
                 </span>
                 <div>
                   <strong>Teléfono</strong>
-                  <div className="contact-link">+506 6239-5138</div>
+                  <a className="contact-link" href="tel:+50662395138">+506 6239-5138</a>
                 </div>
               </li>
               <li>
@@ -32,7 +32,7 @@ const Contact = () => {
                 </span>
                 <div>
                   <strong>Correo</strong>
-                  <div className="contact-link">climarivera186@gmail.com</div>
+                  <a className="contact-link" href="mailto:climarivera186@gmail.com">climarivera186@gmail.com</a>
                 </div>
               </li>
               <li>
@@ -65,7 +65,7 @@ const Contact = () => {
 
                 <div className="field">
                   <label htmlFor="phone">Teléfono</label>
-                  <input id="phone" name="phone" type="tel" placeholder="(55) 1234 5678" />
+                  <input id="phone" name="phone" type="tel" placeholder="+506 6239-5138" />
                 </div>
 
                 <div className="field">
@@ -85,7 +85,7 @@ const Contact = () => {
 
               <div className="form-actions">
                 <button className="btn btn-primary" type="submit">
-                  Solicitar cotización
+                  Solicitar cotización sin compromiso
                 </button>
               </div>
             </form>

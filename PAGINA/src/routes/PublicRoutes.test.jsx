@@ -14,7 +14,7 @@ describe('PublicRoutes', () => {
 
     expect(
       screen.getByRole('heading', {
-        name: /climatización profesional para tu hogar o negocio/i,
+        name: /para toda situación somos tu solución/i,
       })
     ).toBeInTheDocument()
   })
@@ -28,7 +28,7 @@ describe('PublicRoutes', () => {
 
     expect(
       screen.getByRole('heading', {
-        name: /climatización profesional para tu hogar o negocio/i,
+        name: /para toda situación somos tu solución/i,
       })
     ).toBeInTheDocument()
   })

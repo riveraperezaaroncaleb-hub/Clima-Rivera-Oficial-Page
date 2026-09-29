@@ -4,7 +4,7 @@ import PublicRoutes from './routes/PublicRoutes'
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(() => {
-    const savedTheme = localStorage.getItem('climacore-theme')
+    const savedTheme = localStorage.getItem('clima-rivera-multiservicios-theme')
 
     if (savedTheme) {
       return savedTheme === 'dark'
@@ -19,7 +19,7 @@ function App() {
       isDarkMode ? 'dark' : 'light'
     )
 
-    localStorage.setItem('climacore-theme', isDarkMode ? 'dark' : 'light')
+    localStorage.setItem('clima-rivera-multiservicios-theme', isDarkMode ? 'dark' : 'light')
   }, [isDarkMode])
 
   return (

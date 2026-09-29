@@ -8,47 +8,40 @@ const Hero = () => {
     <section id="inicio" className="section hero">
       <div className="container hero-grid">
         <div className="hero-copy">
-          <span className="eyebrow">Servicio profesional</span>
-          <h1>Climatización profesional para tu hogar o negocio</h1>
+          <span className="eyebrow">Clima Rivera Multiservicios</span>
+          <h1>Para toda situación somos tu solución</h1>
           <p>
-            Soluciones integrales en aire acondicionado para hogares, oficinas y
-            comercios, con atención rápida, instalación segura y mantenimiento que
-            mantiene tu ambiente siempre confortable.
+            Electromecánica, Fontanería y Multiservicios. Aire acondicionado,
+            electricidad, mantenimiento y más.
           </p>
 
           <div className="hero-actions">
-            <a className="btn btn-primary" href="#contacto">
-              Solicitar cotización
+            <a
+              className="btn btn-primary"
+              href="https://wa.me/50662395138?text=Hola,%20quisiera%20cotizar%20un%20servicio"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Solicitar cotización sin compromiso
             </a>
             <a className="btn btn-secondary" href="#servicios">
               Ver servicios
             </a>
           </div>
 
-          <ul className="trust-list" aria-label="Beneficios principales">
-            <li>Instalación rápida</li>
-            <li>Atención personalizada</li>
-            <li>Garantía por escrito</li>
-          </ul>
+          <p className="hero-coverage">Cobertura nacional · Costa Rica</p>
         </div>
 
         <div className="hero-visual" aria-label="Galería de climatización">
           <div className="hero-card hero-photo-collage">
             <div className="photo-collage photo-main">
-              <img src={imageMain} alt="Aire acondicionado instalado en pared" />
+              <img src={imageMain} alt="Equipo de aire acondicionado" />
             </div>
             <div className="photo-collage photo-secondary">
-              <img src={imageSecondary} alt="Unidad exterior de aire acondicionado" />
+              <img src={imageSecondary} alt="Equipo exterior de aire acondicionado" />
             </div>
             <div className="photo-collage photo-tertiary">
-              <img src={imageTertiary} alt="Técnico revisando sistema de climatización" />
-            </div>
-            <div className="hero-badge">
-              <span className="badge-icon">❄️</span>
-              <div className="badge-copy">
-                <strong>+2,500</strong>
-                <span>instalaciones realizadas</span>
-              </div>
+              <img src={imageTertiary} alt="Equipo de climatización" />
             </div>
           </div>
         </div>
