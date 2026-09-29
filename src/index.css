@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Poppins', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --color-primary: #0B5ED7;
+  --color-primary-dark: #084298;
+  --color-secondary: var(--bg-secondary);
+  --color-accent: #FF7A1A;
+  --color-accent-hover: #E66A10;
+  --color-text-dark: var(--text-dark);
+  --color-text-light: var(--text-light);
+  --color-surface: var(--bg-surface);
+  --color-border: var(--border-color);
+}
+
+@custom-variant dark (&:is(.dark *));
+
+@layer base {
+  :root {
+    --bg-main: #ffffff;
+    --bg-secondary: #E6F4FF;
+    --bg-surface: #ffffff;
+    --text-dark: #1F2937;
+    --text-light: #4B5563;
+    --border-color: #f3f4f6;
+  }
+  .dark {
+    --bg-main: #111827;
+    --bg-secondary: #1F2937;
+    --bg-surface: #1F2937;
+    --text-dark: #F9FAFB;
+    --text-light: #9CA3AF;
+    --border-color: #374151;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: var(--bg-main);
+    color: var(--text-dark);
+    @apply font-sans antialiased transition-colors duration-300;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold text-[var(--color-text-dark)];
+  }
+}
+
+@layer utilities {
+  .section-padding {
+    @apply py-16 md:py-24;
+  }
+  .container-center {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-lg shadow-sm text-base font-medium text-white bg-[var(--color-primary)] hover:bg-[var(--color-primary-dark)] transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--color-primary)];
+  }
+  .btn-accent {
+    @apply inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-lg shadow-sm text-base font-medium text-white bg-[var(--color-accent)] hover:bg-[var(--color-accent-hover)] transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--color-accent)];
+  }
+  .btn-outline {
+    @apply inline-flex items-center justify-center px-6 py-3 border-2 border-[var(--color-primary)] rounded-lg text-base font-medium text-[var(--color-primary)] bg-transparent hover:bg-[var(--color-primary)] hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--color-primary)];
+  }
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+  }
+}
+
+/* Accessibility */
+.accessibility-highlight-links a, 
+.accessibility-highlight-links button {
+  text-decoration: underline !important;
+  text-decoration-thickness: 3px !important;
+  text-underline-offset: 4px !important;
+  color: #0B5ED7 !important;
+  font-weight: 800 !important;
+}
+
+.dark.accessibility-highlight-links a, 
+.dark.accessibility-highlight-links button {
+  color: #60A5FA !important;
+}
